@@ -1,6 +1,6 @@
 .PHONY: module
 
-VERSION := 0.2.1-Helium-SR1.1
+VERSION := 0.2.2-Helium-SR2
 URL := https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/distribution-karaf/$(VERSION)/distribution-karaf-$(VERSION).zip
 
 module: ROOTFS
