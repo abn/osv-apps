@@ -11,7 +11,7 @@ cmdline: >
   -XX:MaxPermSize=512m
   -Dcom.sun.management.jmxremote
   -Djava.endorsed.dirs=/opendaylight/lib/endorsed
-  -Djava.ext.dirs=/opendaylight/lib/ext
+  -Djava.ext.dirs=/usr/lib/jvm/java/jre/lib/ext:/usr/java/packages/lib/ext:/opendaylight/lib/ext
   -Dkaraf.instances=/opendaylight/instances
   -Dkaraf.home=/opendaylight
   -Dkaraf.base=/opendaylight
