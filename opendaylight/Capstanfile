@@ -3,7 +3,6 @@ base: cloudius/osv-openjdk
 cmdline: >
   --cwd=/opendaylight
   /java.so
-  -server
   -Xms128M
   -Xmx2048m
   -XX:+UnlockDiagnosticVMOptions
