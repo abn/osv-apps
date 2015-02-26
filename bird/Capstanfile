@@ -1,8 +1,12 @@
 base: cloudius/osv-base
 
-cmdline: /bird.so -s bird.ctl -c /bird.conf -P bird.pid -f
+rpm-base:
+  name: bird
+  version: 1.4.4
+  release: 2.fc21
+  arch: x86_64
 
-build: make
+cmdline: /usr/sbin/bird -s bird.ctl -c /bird.conf -P bird.pid -f
 
 files:
-    bird.so: bird.so
+    bird.conf: bird.conf
