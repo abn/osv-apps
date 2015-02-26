@@ -1,0 +1,9 @@
+# Build an src/ directory from the upstream memcached.
+set -e
+VERSION=$1
+BIRD_TAR=bird-${VERSION}.tar.gz
+BIRD_MD5=a8e5e0a9129ce30fe6102c593bafb763
+
+{ [[ -f ${BIRD_TAR} ]] && md5sum ${BIRD_TAR} | grep ${BIRD_MD5} > /dev/null; } \
+    || wget ftp://bird.network.cz/pub/bird/bird-${VERSION}.tar.gz
+tar zxvf bird-${VERSION}.tar.gz

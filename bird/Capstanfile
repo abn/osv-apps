@@ -1,0 +1,8 @@
+base: cloudius/osv-base
+
+cmdline: /bird.so -s bird.ctl -c /bird.conf -P bird.pid -f
+
+build: make
+
+files:
+    bird.so: bird.so
